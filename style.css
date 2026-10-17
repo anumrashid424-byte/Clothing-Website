@@ -1,0 +1,419 @@
+/* ===========================
+   GOOGLE FONT & RESET
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f7f7f7;
+    color:#222;
+    line-height:1.6;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+header{
+    width:100%;
+    background:#111;
+    color:#fff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:2px;
+    color:#d4af37;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:30px;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+
+.hero{
+    width:100%;
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+
+.hero-text{
+    max-width:650px;
+    color:white;
+}
+
+.hero-text h1{
+    font-size:65px;
+    line-height:75px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:35px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:#d4af37;
+    color:#111;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   SECTION
+=========================== */
+
+section{
+    padding:90px 8%;
+}
+
+.collection h2,
+.products h2,
+.about h2,
+.contact h2{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:50px;
+}
+
+/* ===========================
+   CARD GRID
+=========================== */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+}
+
+.card img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+}
+
+.card h3{
+    text-align:center;
+    margin-top:20px;
+    font-size:24px;
+}
+
+.card p{
+    text-align:center;
+    padding:15px;
+    color:#666;
+}
+
+.card span{
+    display:block;
+    text-align:center;
+    padding-bottom:25px;
+    color:#d4af37;
+    font-size:22px;
+    font-weight:700;
+}
+
+/* ===========================
+   SALE BANNER
+=========================== */
+
+.sale{
+    background:#111;
+    color:white;
+    text-align:center;
+}
+
+.sale h2{
+    font-size:60px;
+    color:#d4af37;
+    margin-bottom:20px;
+}
+
+.sale p{
+    font-size:22px;
+    margin-bottom:35px;
+}/* ===========================
+   ABOUT SECTION
+=========================== */
+
+.about{
+    background:#ffffff;
+    text-align:center;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    font-size:18px;
+    color:#555;
+    line-height:1.9;
+}
+
+/* ===========================
+   CONTACT SECTION
+=========================== */
+
+.contact{
+    background:#f2f2f2;
+    text-align:center;
+}
+
+.contact p{
+    font-size:18px;
+    margin:12px 0;
+    color:#444;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:25px;
+}
+
+footer p{
+    font-size:16px;
+    letter-spacing:1px;
+}
+
+/* ===========================
+   IMAGE EFFECT
+=========================== */
+
+.card img{
+    transition:0.5s;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   SMOOTH SCROLL
+=========================== */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+header{
+
+    flex-direction:column;
+    padding:20px;
+
+}
+
+.logo{
+
+    margin-bottom:15px;
+
+}
+
+nav{
+
+    text-align:center;
+
+}
+
+nav a{
+
+    display:inline-block;
+    margin:10px;
+
+}
+
+.hero{
+
+    justify-content:center;
+    text-align:center;
+    padding:0 25px;
+
+}
+
+.hero-text h1{
+
+    font-size:48px;
+    line-height:58px;
+
+}
+
+.hero-text p{
+
+    font-size:17px;
+
+}
+
+.card img{
+
+    height:300px;
+
+}
+
+.sale h2{
+
+    font-size:45px;
+
+}
+
+}
+
+/* ===========================
+   SMALL MOBILE
+=========================== */
+
+@media(max-width:576px){
+
+.hero{
+
+    height:90vh;
+
+}
+
+.hero-text h1{
+
+    font-size:36px;
+    line-height:46px;
+
+}
+
+.hero-text p{
+
+    font-size:15px;
+
+}
+
+.btn{
+
+    padding:12px 28px;
+    font-size:15px;
+
+}
+
+.collection h2,
+.products h2,
+.about h2,
+.contact h2{
+
+    font-size:30px;
+
+}
+
+.card img{
+
+    height:260px;
+
+}
+
+.sale h2{
+
+    font-size:36px;
+
+}
+
+.sale p{
+
+    font-size:18px;
+
+}
+
+.about p{
+
+    font-size:16px;
+
+}
+
+.contact p{
+
+    font-size:16px;
+
+}
+
+}
+
+/* ===========================
+   EXTRA POLISH
+=========================== */
+
+.card{
+    cursor:pointer;
+}
+
+.card h3{
+    color:#111;
+}
+
+.card:hover h3{
+    color:#d4af37;
+}
+
+.btn:hover{
+    box-shadow:0 10px 25px rgba(212,175,55,0.4);
+}
+
+section{
+    scroll-margin-top:90px;
+}
